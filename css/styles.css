@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    height: 100vh;
+}
+
+.intro {
+    background: url(../src/images/bg.jpg) no-repeat right bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: relative;
+}
+
+.black-layer {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);     
+}
+
+/* Header */
+
+.header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: transparent;
+    height: 60px;
+    align-items: center;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navbar */
+
+#nav-bar {
+    height: 60px;
+}
+
+/* Botão hamburguer */
+
+#btn-mobile {
+    display: flex;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: .5rem;
+    z-index: 1000;
+}
+
+#hamburger {
+    border-top: 2px solid;
+    color: white;
+    margin: 5px;
+}
+
+#hamburger::after, #hamburger::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+}
+
+#btn-mobile.transformar #hamburger {
+    border-top-color: transparent;
+}
+
+#btn-mobile.transformar #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
+#btn-mobile.transformar #hamburger::before {
+    transform: rotate(135deg);
+}
+
+
+/* Navbar */
+
+#nav-bar ul li:first-child {
+    margin-top: 80px;
+}
+
+#nav-bar ul {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#nav-bar ul li {
+    margin: 10px ;
+    padding: 0px 0px 15px 0px;
+    list-style: none;
+    border-bottom: solid 1px rgba(80, 80, 80, 0.5);
+    
+}
+
+#nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    top: 60px;
+    font-size: 1.3rem;
+}
+
+/* Menu */
+
+#menu {
+    position: absolute;
+    width: 0%;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.8);
+    display: block;
+    transition: 0.2s;
+    height:100vh;
+    z-index: 999;
+    visibility: hidden;
+    overflow-x: hidden;
+}
+
+#menu.mostrar {
+    width: 75%;
+    visibility: visible;
+    overflow-x: auto;
+}
+
+/* Introdução */
+
+.intro-content {
+    width: 100%;
+    height: 100%;
+}
+
+.introduction {
+    position: absolute;
+    width: 80%;
+    top: 40%;
+    margin-left: 15%;
+}
+
+.introduction h3 {
+    font-size: 1.4rem;
+    color: blueviolet;
+}
+
+.introduction p {
+    font-size: 1.5rem;
+}
+
+.introduction .job::after {
+    content: '|';
+    margin-left: 2px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.social-network a i {
+    color: white;
+    font-size: 2rem;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+
+.saiba-mais {
+    position: absolute;
+    width: 30%; 
+    height: 6%;
+    border-radius: 5px;
+    text-align: center; 
+    margin-left: 35%;
+    margin-right: 35%; 
+    bottom: 2rem 
+}
+
+.saiba-mais div{
+    margin: 6px;
+}
+
+.saiba-mais a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+    font-size: 1rem;
+}
+
+.saiba-mais i {
+    color: white;
+    display: block;
+    margin-top: 5px;
+}
