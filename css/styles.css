@@ -1,3 +1,7 @@
+:root {
+    --secondary-color: rgb(160, 58, 255);
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -9,12 +13,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+h4 {
+    color:rgb(48, 0, 94)
+}
+
 .main {
     height: 100vh;
 }
 
 .intro {
-    background: url(../src/images/bg.jpg) no-repeat right bottom;
+    background: url(../src/images/intro-background.jpg) no-repeat right bottom;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -29,7 +37,7 @@ body {
     background-color: rgba(0, 0, 0, 0.7);     
 }
 
-/* Header */
+/* ************************ Header ************************ */
 
 .header {
     box-sizing: border-box;
@@ -43,12 +51,6 @@ body {
 .header a {
     color: white;
     text-decoration: none;
-}
-
-/* Navbar */
-
-#nav-bar {
-    height: 60px;
 }
 
 /* Botão hamburguer */
@@ -65,7 +67,7 @@ body {
 
 #hamburger {
     border-top: 2px solid;
-    color: white;
+    color: var(--secondary-color);
     margin: 5px;
 }
 
@@ -92,8 +94,11 @@ body {
     transform: rotate(135deg);
 }
 
-
 /* Navbar */
+
+#nav-bar {
+    height: 60px;
+}
 
 #nav-bar ul li:first-child {
     margin-top: 80px;
@@ -142,7 +147,7 @@ body {
     overflow-x: auto;
 }
 
-/* Introdução */
+/* *********************** Introdução ************************/
 
 .intro-content {
     width: 100%;
@@ -153,16 +158,18 @@ body {
     position: absolute;
     width: 80%;
     top: 40%;
-    margin-left: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .introduction h3 {
-    font-size: 1.4rem;
-    color: blueviolet;
+    font-size: 1.6rem;
+    color: var(--secondary-color);
+    font-weight: bolder;
 }
 
 .introduction p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .introduction .job::after {
@@ -215,4 +222,131 @@ body {
     color: white;
     display: block;
     margin-top: 5px;
+}
+
+/* *********************** Resumo *********************** */
+
+/* Titulo */
+
+.resume {
+    background: url(../src/images/resume-background.jpg) no-repeat bottom;
+    background-size: cover;    
+    background-color: white;    
+    color: black;
+
+}
+
+.resume h3 {
+    color: var(--secondary-color);
+    padding-top: 20px ;
+}
+
+.title {
+    text-align: center;
+}
+
+.title p {
+    margin-top: 5px;
+}
+
+/* Informações pessoais */
+
+.about img {
+    display: flex;
+    height: 120px;
+    border-radius: 200px;
+    margin: 30px auto;
+}
+
+.personal-info {
+    margin: 0 30px;
+}
+
+.personal-info div {
+    margin: 15px 0;
+}
+
+.personal-info div p {
+    font-size: 1.2rem;
+}
+
+/* Informações Acadêmicas */
+
+.academic-education {
+   margin: 0 30px;
+}
+
+.graduation .institute {
+    display:flex;
+    margin-top: 20px;
+}
+
+.graduation .institute i {
+    margin-right: 10px;
+    background-color: white;
+    padding: 12px 10px 10px 10px;
+    border-radius: 200px;
+}
+
+.graduation .institute H4 {
+    font-size: 1.1rem;
+    margin: auto 0;
+}
+
+.institute p {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.course-content {
+    margin: 10px 0 0 50px;
+    font-size: 0.9rem;
+}
+
+.course-content p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* Skills */
+
+.skills {
+    margin: 30px;
+}
+
+.front-end-skills img,
+.back-end-skills img {
+    margin: 25px 5px 0 5px;
+}
+
+.front-end-skills h4,
+.back-end-skills h4 {
+    margin-top: 15px; 
+}
+
+.front-end-skills img {
+    height: 50px;
+}
+
+.back-end-skills img {
+    height: 50px;
+}
+
+/* Download CV */
+
+.download-cv {
+    margin: 30px;
+    display: flex;
+}
+
+.download-cv button {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    height: 50px;    
+    width: 100%;
 }
