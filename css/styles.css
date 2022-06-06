@@ -37,6 +37,10 @@ h4 {
     background-color: rgba(0, 0, 0, 0.7);     
 }
 
+.content {
+    margin: 0 30px;
+}
+
 /* ************************ Header ************************ */
 
 .header {
@@ -67,7 +71,7 @@ h4 {
 
 #hamburger {
     border-top: 2px solid;
-    color: var(--secondary-color);
+    color: white;
     margin: 5px;
 }
 
@@ -132,7 +136,7 @@ h4 {
     width: 0%;
     top: 0px;
     left: 0px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     display: block;
     transition: 0.2s;
     height:100vh;
@@ -160,16 +164,24 @@ h4 {
     top: 40%;
     margin-left: 10%;
     margin-right: 10%;
+    text-align: center;
 }
 
 .introduction h3 {
-    font-size: 1.6rem;
+    font-size: 1rem;
     color: var(--secondary-color);
     font-weight: bolder;
 }
 
 .introduction p {
-    font-size: 1.7rem;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.introduction .job {
+    display: block;
+    margin-top: 5px;
+    font-size: 1.2rem;
 }
 
 .introduction .job::after {
@@ -191,7 +203,7 @@ h4 {
 .social-network a i {
     color: white;
     font-size: 2rem;
-    margin-left: 10px;
+    margin: 30px 5px 5px 5px;
     justify-content: space-between;
 }
 
@@ -229,16 +241,16 @@ h4 {
 /* Titulo */
 
 .resume {
-    background: url(../src/images/resume-background.jpg) no-repeat bottom;
+    /* background: url(../src/images/resume-background.jpg) no-repeat bottom; */
     background-size: cover;    
     background-color: white;    
     color: black;
 
 }
 
-.resume h3 {
+.title h3 {
     color: var(--secondary-color);
-    padding-top: 20px ;
+    padding-top: 60px ;
 }
 
 .title {
@@ -258,10 +270,6 @@ h4 {
     margin: 30px auto;
 }
 
-.personal-info {
-    margin: 0 30px;
-}
-
 .personal-info div {
     margin: 15px 0;
 }
@@ -272,19 +280,16 @@ h4 {
 
 /* Informações Acadêmicas */
 
-.academic-education {
-   margin: 0 30px;
-}
-
 .graduation .institute {
     display:flex;
     margin-top: 20px;
 }
 
 .graduation .institute i {
+    color: white;
     margin-right: 10px;
-    background-color: white;
-    padding: 12px 10px 10px 10px;
+    background-color: var(--secondary-color);
+    padding: 11px 10px 10px 10px;
     border-radius: 200px;
 }
 
@@ -310,10 +315,6 @@ h4 {
 
 /* Skills */
 
-.skills {
-    margin: 30px;
-}
-
 .front-end-skills img,
 .back-end-skills img {
     margin: 25px 5px 0 5px;
@@ -335,7 +336,7 @@ h4 {
 /* Download CV */
 
 .download-cv {
-    margin: 30px;
+    margin: 30px 0;
     display: flex;
 }
 
@@ -349,4 +350,74 @@ h4 {
     border-radius: 10px;
     height: 50px;    
     width: 100%;
+}
+
+/* *********************** Portfolio ***********************  */
+
+.portfolio {
+    background-color: var(--secondary-color);
+    height: 100vh;
+    position: relative;
+}
+
+.portfolio .content {
+    position: relative;
+}
+
+.portfolio h3 {
+    padding-top: 60px;
+    color: white;
+}
+
+.portfolio img {
+    width: 100%;
+    margin: 60% 0;
+}
+
+/* *********************** Contato ***********************  */
+
+.contato {
+    color: black;
+    height: 100vh;
+    
+}
+
+.contact-form {
+    text-align: center;
+    border: none;
+}
+
+.contact-form fieldset {
+    border: none;
+    margin: 80px 0;
+}
+
+.form-field {
+    width: 90%;
+    height: 2rem;
+    margin: 15px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: solid 1px var(--secondary-color);
+}
+
+.form-field::placeholder {
+    color: rgba(48, 0, 94, 0.5)
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form button {
+    height: 50px;
+    width: 100%;
+    margin-top: 80px;
+    border: none;
+    border-radius: 10px; 
+    color: white; 
+    font-weight: bold;  
+    background-color: rgb(35, 255, 35);
+    font-size: 1.1rem;
 }
