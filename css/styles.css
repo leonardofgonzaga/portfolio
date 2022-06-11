@@ -396,9 +396,7 @@ h4 {
 /* *********************** Contato ***********************  */
 
 .contato {
-    color: black;
-    height: 100vh;
-    
+    color: black;    
 }
 
 .contact-form {
@@ -432,7 +430,7 @@ h4 {
 .contact-form button {
     height: 50px;
     width: 100%;
-    margin-top: 80px;
+    margin-top: 30px;
     border: none;
     border-radius: 10px; 
     color: white; 
