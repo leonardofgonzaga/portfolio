@@ -38,7 +38,8 @@ h4 {
 }
 
 .content {
-    margin: 0 20px;
+    margin: 0 25px;
+    height: 100%;
 }
 
 /* ************************ Header ************************ */
@@ -52,6 +53,7 @@ h4 {
     height: 60px;
     align-items: center;
 }
+
 .header a {
     color: white;
     text-decoration: none;
@@ -184,22 +186,6 @@ h4 {
     font-size: 1.2rem;
 }
 
-.introduction .job::after {
-    content: '|';
-    margin-left: 2px;
-    opacity: 1;
-    animation: pisca .7s infinite;
-}
-
-@keyframes pisca {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-}
-
 .social-network a i {
     color: white;
     font-size: 2rem;
@@ -289,27 +275,31 @@ h4 {
 
 /* Informações Acadêmicas */
 
+.graduation {
+    margin-top: 50px;
+}
+
 .graduation .institute {
-    display:flex;
+    display: flex;
     margin-top: 20px;
+    align-items: center;
 }
 
 .graduation .institute i {
-    color: white;
-    margin-right: 10px;
-    background-color: var(--secondary-color);
-    padding: 11px 10px 10px 10px;
-    border-radius: 200px;
+    display: flex;
+    color: rgb(48, 0, 94);
+    margin-right: 13px;
+    background-color: rgb(209, 209, 209);
+    padding: 8px;
+    border-radius: 500px;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
 }
 
-.graduation .institute H4 {
+.graduation .institute h4 {
     font-size: 1.1rem;
     margin: auto 0;
-}
-
-.institute p {
-    font-size: 0.9rem;
-    font-weight: 500;
 }
 
 .course-content {
@@ -322,7 +312,7 @@ h4 {
     text-align: justify;
 }
 
-/* Skills */
+/* Habilidades */
 
 .skill-card {
     margin: 40px 0;
@@ -375,12 +365,7 @@ h4 {
 
 .portfolio {
     background-color: var(--secondary-color);
-    height: 100vh;
-    position: relative;
-}
-
-.portfolio .content {
-    position: relative;
+    min-height: 100%;
 }
 
 .portfolio h3 {
@@ -390,7 +375,7 @@ h4 {
 
 .portfolio img {
     width: 100%;
-    margin: 60% 0;
+    margin: auto;
 }
 
 /* *********************** Contato ***********************  */
@@ -402,18 +387,19 @@ h4 {
 .contact-form {
     text-align: center;
     border: none;
+    margin: 80px 0; 
+    width: 100%;    
 }
 
 .contact-form fieldset {
-    border: none;
-    margin: 80px 0;
+    border: none;    
 }
 
 .form-field {
-    width: 90%;
+    width: calc(100% - 12px);
     height: 2rem;
     margin: 15px 0;
-    padding: 10px;
+    padding: 10px 0px 10px 10px;
     font-size: 1rem;
     border: solid 1px var(--secondary-color);
     border-radius: 5px;
