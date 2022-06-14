@@ -191,6 +191,7 @@ h4 {
     font-size: 2rem;
     margin: 30px 5px 5px 5px;
     justify-content: space-between;
+    transition: .3s;
 }
 
 .saiba-mais {
@@ -359,6 +360,7 @@ h4 {
     border-radius: 10px;
     height: 50px;    
     width: 100%;
+    cursor: pointer;
 }
 
 /* *********************** Portfolio ***********************  */
@@ -395,21 +397,39 @@ h4 {
     border: none;    
 }
 
-.form-field {
-    width: calc(100% - 12px);
-    height: 2rem;
-    margin: 15px 0;
-    padding: 10px 0px 10px 10px;
-    font-size: 1rem;
-    border: solid 1px var(--secondary-color);
-    border-radius: 5px;
+.contact-form div {
+    position: relative;
 }
 
-.form-field::placeholder {
-    color: rgba(48, 0, 94, 0.5)
+.contact-form div label {
+    position: absolute;
+    top: 32px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.form-field {
+    width: calc(100% - 22px);
+    height: 2rem;
+    margin: 15px 0;
+    padding: 5px 0px;
+    font-size: 1rem;
+    border: none;
+    border-bottom: solid 1px var(--secondary-color);
+    outline: none;
+}
+
+.form-field:focus ~ label,
+.form-field:valid ~ label {
+    top: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
 .contact-form textarea {
+    padding-top: 25px;
     height: 150px;
 }
 
@@ -421,8 +441,9 @@ h4 {
     border-radius: 10px; 
     color: white; 
     font-weight: bold;  
-    background-color: rgb(35, 255, 35);
+    background-color: rgb(3, 216, 3);
     font-size: 1.1rem;
+    cursor:pointer;
 }
 
 /* *********************** Rodapé ***********************  */

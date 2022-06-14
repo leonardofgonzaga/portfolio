@@ -1,14 +1,22 @@
-@media (min-width: 426px) {
+@media screen and (min-width: 426px) {
 
     .content {
         margin: 0 50px;
         position: relative;
     }
+
+    /* ************************ Header ************************ */
+
+    /* Menu */
+
+    #menu.mostrar {
+        width: 60%;
+    }
         
     /* *********************** Introdução ************************/
 
     .introduction h3 {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     .introduction p {
