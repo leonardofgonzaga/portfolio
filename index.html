@@ -1,234 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leonardo Gonzaga - Portfolio</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/small-devices.css">
     <link rel="stylesheet" href="css/medium-device.css">
     <link rel="stylesheet" href="css/large-device.css">
     <link rel="stylesheet" href="css/extra-large-device.css">
     <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/d5bc5a5517.js" crossorigin="anonymous"></script>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="main">
-        
-        <section class="intro"> <!-- Inicio Intro -->
-            
-            <div class="black-layer">              
-                
+
+        <section class="intro">
+            <!-- Inicio Intro -->
+
+            <div class="black-layer">
+
                 <div class="header">
-                    
+
                     <button id="btn-mobile">
                         <span id="hamburger"></span>
                     </button>
-                    
-                    <nav id="nav-bar">                     
+
+                    <nav id="nav-bar">
                         <ul id="menu">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Resumo</a></li>
-                            <li><a href="#">Habilidades</a></li>
-                            <li><a href="#">Portfólio</a></li>
-                            <li><a href="#">Contato</a></li>
+                            <li><a href="#resume">Resumo</a></li>
+                            <li><a href="#skills">Habilidades</a></li>
+                            <li><a href="#portfolio">Portfólio</a></li>
+                            <li><a href="#contact">Contato</a></li>
                         </ul>
                     </nav>
 
-                </div>            
-                
+                </div>
+
                 <div class="introduction">
                     <h3>P O R T F Ó L I O</h3>
                     <p>Leonardo Gonzaga</p>
-                    <span class="job">&lt;/Full Stack Developer&gt;</span>  
+                    <span class="job">&lt;/Full Stack Developer&gt;</span>
                     <div class="social-network">
-                        <a href="#"><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    </div>                 
-                </div> 
-    
+                        <a href="https://github.com/leonardofgonzaga" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/leonardo-ferreira-gonzaga/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
                 <div class="saiba-mais">
                     <div>
-                        <a href="#">SAIBA MAIS
+                        <a href="#resume">SAIBA MAIS
                             <i class="fa-solid fa-chevron-down"></i>
-                        </a>                        
-                    </div>                    
-                </div>                  
+                        </a>
+                    </div>
+                </div>
 
             </div>
-                           
+
         </section> <!-- Fim Intro -->
 
-        <section class="resume"> <!-- Inicio Resumo -->
+        <section id="resume" class="resume">
+            <!-- Inicio Resumo -->
 
             <div class="content">
 
                 <div class="title">
                     <h3>&lt;/RESUMO&gt;</h3>
                     <p>Um pouquinho sobre mim...</p>
-                </div>                    
-    
+                </div>
+
                 <div class="about">
-                    
+
                     <img src="src/images/profile.jpg" alt="">
-    
+
                     <div class="personal-info">
                         <div>
                             <h4>Nome:</h4>
                             <p>Leonardo Ferreira Gonzaga</p>
                         </div>
-        
+
                         <div>
                             <h4>Nascimento:</h4>
                             <p>03 de março de 1995</p>
                         </div>
-        
+
                         <div>
                             <h4>Localização:</h4>
                             <p>Belo Horizonte, MG</p>
                         </div>
-        
+
                         <div>
                             <h4>Contato:</h4>
                             <p>leonardo.fg95@gmail.com</p>
                         </div>
-                    </div>            
-    
-                    <div class="academic-education">
-                        
-                        <div class="title">
-                            <h3>&lt;/FORMAÇÃO&gt;</h3>       
-                        </div>   
+                    </div>
 
-                        <div class="graduation">                                             
-                        
+                    <div class="academic-education">
+
+                        <div class="title">
+                            <h3>&lt;/FORMAÇÃO&gt;</h3>
+                        </div>
+
+                        <div class="graduation">
+
                             <div class="institute">
                                 <i class="fa-solid fa-graduation-cap"></i>
                                 <div>
                                     <h4>Universidade Estácio de Sá</h4>
-                                </div>                            
-                                
+                                </div>
+
                             </div>
-    
+
                             <div class="course-content">
                                 <h4>Gestão da Tecnologia da Informação</h4>
                                 <span>Janeiro de 2021 - Em andamento</span>
 
                                 <p>
                                     O curso de Gestão da Tecnologia da Informação capacita
-                                    profissionais para desempenhar funções na gestão de 
+                                    profissionais para desempenhar funções na gestão de
                                     empresas utilizando a tecnologia como principal ferramenta.
-                                    O objetivo é tornar alunos capazes de gerir e controlar os 
+                                    O objetivo é tornar alunos capazes de gerir e controlar os
                                     processos tecnológicos da empresa.
                                 </p>
                             </div>
-                        </div>                   
-    
+                        </div>
+
                     </div>
-    
+
                 </div>
-    
-                <div class="skills">
-                    
+
+                <div id="skills" class="skills">
+
                     <div class="title">
-                        <h3>&lt;/HABILIDADES&gt;</h3>      
-                    </div> 
-                    
+                        <h3>&lt;/HABILIDADES&gt;</h3>
+                    </div>
+
                     <div class="skill-cards">
                         <div class="skill-card">
                             <div>
-                                <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-                            </div>                            
+                                <img alt=""
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                            </div>
                             <p>HTML5</p>
                         </div>
-                        
+
                         <div class="skill-card">
                             <div>
-                                <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"> 
-                            </div>                            
+                                <img alt=""
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                            </div>
                             <p>CSS3</p>
                         </div>
 
                         <div class="skill-card">
                             <div>
-                                <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
-                            </div>                            
+                                <img alt=""
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+                            </div>
                             <p>JavaScript</p>
                         </div>
 
                         <div class="skill-card">
                             <div>
-                                <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
-                            </div>                            
-                            <p>PHP7</p> 
+                                <img alt=""
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg">
+                            </div>
+                            <p>PHP7</p>
                         </div>
 
                         <div class="skill-card">
                             <div>
-                                <img alt="" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
-                            </div>                            
-                            <p>MySQL</p> 
+                                <img alt=""
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
+                            </div>
+                            <p>MySQL</p>
                         </div>
 
                     </div>
-    
-                <div class="download-cv">
-                    <button>Download CV</button>
+
+                    <div class="download-cv">
+                        <button>Download CV</button>
+                    </div>
+
                 </div>
 
-            </div>
-            
         </section> <!-- Fim Resumo -->
 
-        <section class="portfolio"> <!-- Inicio Porfolio -->
+        <section id="portfolio" class="portfolio">
+            <!-- Inicio Porfolio -->
 
             <div class="content">
 
                 <div class="title">
-                    <h3>&lt;/PORTFÓLIO&gt;</h3>   
+                    <h3>&lt;/PORTFÓLIO&gt;</h3>
                     <p>Aqui você encontra um pouco dos projetos que desenvolvi
                         ao longo do meu aprendizado
-                    </p>  
-                </div>   
+                    </p>
+                </div>
+
+                <div class="projects">
+
+                    <div class="project">
+
+                        <a class="thumb" href="#modal-01">
+                            <img src="src/projects-covers/mata-mosquito.jpg" alt="">    
+                        </a>
+
+                        <div id="modal-01" class="modal">
+                            <a href="#fechar" title="Fechar" class="fechar">X</a>
+
+                            <div class="container">
+                                <div class="modal-content">
+
+                                    <div class="project-cover">
+                                        <img src="src/projects-covers/mata-mosquito.jpg" alt="">
+                                    </div>
+
+                                    <div class="about-project">
+                                        <h4>Game Mata Mosquito</h4>
+                                        <p>Jogo onde o jogador deve matar os mosquitos até
+                                            o estouro do cronômetro para vencer.
+                                        </p>
+                                    </div>
+
+                                    <div class="tech">
+                                        <h4>Tecnologias utilizadas:</h4>
+                                        <img alt=""
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                                        <img alt=""
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                    </div>
+
+                                    <a class="project-btn" href="#">VER PROJETO</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project">
+
+                        <a class="thumb" href="#modal-01">
+                            <img src="src/projects-covers/mata-mosquito.jpg" alt="">
     
-                <img src="src/images/em-contrucao.gif" alt="">
+                        </a>
+
+                        <div id="modal-01" class="modal">
+                            <a href="#fechar" title="Fechar" class="fechar">X</a>
+
+                            <div class="container">
+                                <div class="modal-content">
+
+                                    <div class="project-cover">
+                                        <img src="src/projects-covers/mata-mosquito.jpg" alt="">
+                                    </div>
+
+                                    <div class="about-project">
+                                        <h4>Game Mata Mosquito</h4>
+                                        <p>Jogo onde o jogador deve matar os mosquitos até
+                                            o estouro do cronômetro para vencer.
+                                        </p>
+                                    </div>
+
+                                    <div class="tech">
+                                        <h4>Tecnologias utilizadas:</h4>
+                                        <img alt=""
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                                        <img alt=""
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                    </div>
+
+                                    <a class="project-btn" href="#">VER PROJETO</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="project">
+
+                        <a class="thumb" href="#modal-01">
+                            <img src="src/projects-covers/mata-mosquito.jpg" alt="">
+    
+                        </a>
+
+                        <div id="modal-01" class="modal">
+                            <a href="#fechar" title="Fechar" class="fechar">X</a>
+
+                            <div class="container">
+                                <div class="modal-content">
+
+                                    <div class="project-cover">
+                                        <img src="src/projects-covers/mata-mosquito.jpg" alt="">
+                                    </div>
+
+                                    <div class="about-project">
+                                        <h4>Game Mata Mosquito</h4>
+                                        <p>Jogo onde o jogador deve matar os mosquitos até
+                                            o estouro do cronômetro para vencer.
+                                        </p>
+                                    </div>
+
+                                    <div class="tech">
+                                        <h4>Tecnologias utilizadas:</h4>
+                                        <img alt=""
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                                        <img alt=""
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                                        <img
+                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                    </div>
+
+                                    <a class="project-btn" href="#">VER PROJETO</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                    </div>
+
+                </div>
 
             </div>
 
         </section> <!-- Fim Porfolio -->
 
-        <section class="contato"> <!-- Inicio contato -->
+        <section id="contact" class="contact">
+            <!-- Inicio contato -->
 
             <div class="content">
 
                 <div class="title">
-                    <h3>&lt;/CONTATO&gt;</h3>   
-                    <p>Preencha o formulário abaixo para entrar em contato 
+                    <h3>&lt;/CONTATO&gt;</h3>
+                    <p>Preencha o formulário abaixo para entrar em contato
                         e tirar as suas dúvidas
-                    </p>  
-                </div>  
+                    </p>
+                </div>
 
                 <form class="contact-form" action="">
                     <fieldset>
-                        <div>                            
+                        <div>
                             <input id="name" class="form-field" type="text" required="">
                             <label for="name">Nome</label>
                         </div>
-                        <div>                            
+                        <div>
                             <input id="email" class="form-field" type="email" required="">
                             <label for="email">E-Mail</label>
                         </div>
-                        <div>                            
+                        <div>
                             <input id="subject" class="form-field" type="text" required="">
                             <label for="name">Assunto</label>
                         </div>
-                        <div>                            
-                            <textarea id="message" class="form-field" name="" id="" cols="30" rows="10" required=""></textarea>
+                        <div>
+                            <textarea id="message" class="form-field" name="" id="" cols="30" rows="10"
+                                required=""></textarea>
                             <label for="name">Menssagem</label>
                         </div>
                         <div>
@@ -237,8 +384,8 @@
                     </fieldset>
                 </form>
 
-            </div>           
-           
+            </div>
+
         </section> <!-- Fim contato -->
 
         <section class="footer">
@@ -251,31 +398,34 @@
                         <h3>Localização</h3>
                         <p>Belo Horizonte, MG</p>
                     </div>
-    
+
                     <div class="footer-card">
                         <i class="fa-solid fa-envelope"></i>
                         <h3>Contato</h3>
                         <p>leonardo.fg95@gmail.com</p>
                         <p>(31) 97580-2994</p>
                     </div>
-    
-                    <div class="footer-card">   
+
+                    <div class="footer-card">
                         <div class="social-network">
-                            <a href="#"><i class="fa-brands fa-github"></i></a>
-                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/leonardofgonzaga" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/leonardo-ferreira-gonzaga/" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
                             <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                        </div> 
+                        </div>
                     </div>
                 </div>
 
                 <div class="bottom-line">
                     <p>Desenvolvido por Leonardo Gonzaga - 2022</p>
-                </div>                
-            </div>            
-            
+                </div>
+            </div>
+
         </section>
 
     </div>
     <script src="scripts/scripts.js"></script>
 </body>
+
 </html>

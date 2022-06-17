@@ -86,8 +86,16 @@
         transition: .3s;
     }
 
-    .social-network a i:hover {
-        color: var(--secondary-color);
+    .fa-github:hover {
+        color: rgb(102, 102, 102);
+    }
+
+    .fa-linkedin:hover {
+        color: rgb(14, 118, 168);
+    }
+    
+    .fa-whatsapp:hover {
+        color: rgb(37, 211, 102);
     }
 
     .saiba-mais a {
@@ -109,8 +117,30 @@
     }
 
     .download-cv button:hover {
-        background-color: rgb(157, 0, 255);        
+        background-color: rgb(114, 0, 185);        
     }  
+
+    /* *********************** Portfólio *********************** */
+
+    .modal-content {
+        background-color: white;
+        width: 50%;
+    }
+
+    .slider {
+        height: 450px;
+    }
+
+    .thumb img {
+        height: 250px;
+        transition: .5s;
+    }
+
+    .thumb img:hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);        
+    }   
 
     /* *********************** Contato ***********************  */
 
