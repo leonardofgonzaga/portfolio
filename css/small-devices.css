@@ -257,6 +257,7 @@ h4 {
 
 .title p {
     margin-top: 5px;
+    color: black;
 }
 
 /* Informações pessoais */
@@ -290,9 +291,9 @@ h4 {
 
 .graduation .institute i {
     display: flex;
-    color: rgb(48, 0, 94);
+    color: rgb(255, 255, 255);
     margin-right: 13px;
-    background-color: rgb(209, 209, 209);
+    background-color: var(--secondary-color);
     padding: 8px;
     border-radius: 500px;
     align-items: center;
@@ -368,27 +369,102 @@ h4 {
 /* *********************** Portfolio ***********************  */
 
 .portfolio {
-    background-color: var(--secondary-color);
-    min-height: 100%;
+    background-color: rgb(236, 236, 236);
+    display: block;
 }
 
 .portfolio h3 {
     padding-top: 60px;
-    color: white;
 }
 
 .projects {
     display: block;
-    margin: 50px auto;
+    margin: auto;
+    padding: 50px 0;;
 }
 
 .project {
-    width: 90%;
-    margin: 25px auto;
+    width: 100%;
+    margin: 25px 0;
 }
 
-.thumb img {
+.project a {
+    position: relative;
+}
+
+.project a img {
     width: 100%;
+}
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.my-slides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 16px 0;
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .5) 40%, rgba(0, 0, 0, .0));
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation: fade 1.5s;
+} 
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
 
 .modal {

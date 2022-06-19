@@ -125,22 +125,15 @@
     .modal-content {
         background-color: white;
         width: 50%;
-    }
+    } 
 
-    .slider {
-        height: 450px;
-    }
-
-    .thumb img {
-        height: 250px;
+    .project-btn {
         transition: .5s;
     }
 
-    .thumb img:hover {
-        -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        transform: scale(1.2);        
-    }   
+    .project-btn:hover {
+        background-color: rgb(114, 0, 185);  
+    }
 
     /* *********************** Contato ***********************  */
 

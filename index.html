@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leonardo Gonzaga - Portfolio</title>
+    <title>Leonardo Gonzaga - Web Developer</title>
     <!-- CSS -->
     <link rel="stylesheet" href="css/small-devices.css">
     <link rel="stylesheet" href="css/medium-device.css">
@@ -23,8 +23,7 @@
 <body>
     <div class="main">
 
-        <section class="intro">
-            <!-- Inicio Intro -->
+        <section class="intro"> <!-- Inicio Intro -->            
 
             <div class="black-layer">
 
@@ -69,8 +68,7 @@
 
         </section> <!-- Fim Intro -->
 
-        <section id="resume" class="resume">
-            <!-- Inicio Resumo -->
+        <section id="resume" class="resume"> <!-- Inicio Resumo -->            
 
             <div class="content">
 
@@ -196,159 +194,85 @@
 
         </section> <!-- Fim Resumo -->
 
-        <section id="portfolio" class="portfolio">
-            <!-- Inicio Porfolio -->
-
+        <section id="portfolio" class="portfolio">  <!-- Inicio Porfolio -->
+           
             <div class="content">
 
                 <div class="title">
                     <h3>&lt;/PORTFÓLIO&gt;</h3>
-                    <p>Aqui você encontra um pouco dos projetos que desenvolvi
-                        ao longo do meu aprendizado
+                    <p>Confira aqui um pouco do meu trabalho
                     </p>
                 </div>
 
                 <div class="projects">
+                    
+                    <div class="slideshow-container">
 
-                    <div class="project">
+                        <div class="project my-slides fade">
 
-                        <a class="thumb" href="#modal-01">
-                            <img src="src/projects-covers/mata-mosquito.jpg" alt="">    
-                        </a>
-
-                        <div id="modal-01" class="modal">
-                            <a href="#fechar" title="Fechar" class="fechar">X</a>
-
-                            <div class="container">
-                                <div class="modal-content">
-
-                                    <div class="project-cover">
-                                        <img src="src/projects-covers/mata-mosquito.jpg" alt="">
-                                    </div>
-
-                                    <div class="about-project">
-                                        <h4>Game Mata Mosquito</h4>
-                                        <p>Jogo onde o jogador deve matar os mosquitos até
-                                            o estouro do cronômetro para vencer.
-                                        </p>
-                                    </div>
-
-                                    <div class="tech">
-                                        <h4>Tecnologias utilizadas:</h4>
-                                        <img alt=""
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-                                        <img alt=""
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                                    </div>
-
-                                    <a class="project-btn" href="#">VER PROJETO</a>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="project">
-
-                        <a class="thumb" href="#modal-01">
-                            <img src="src/projects-covers/mata-mosquito.jpg" alt="">
+                            <a href="#modal-01">
+                                <img src="src/projects-covers/mata-mosquito.jpg" alt="">    
+                                <div class="text">Mata Mosquito</div>
+                            </a>             
     
-                        </a>
+                        </div> 
 
-                        <div id="modal-01" class="modal">
-                            <a href="#fechar" title="Fechar" class="fechar">X</a>
+                        <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+                        <a class="next" onclick="plusSlides(1)">&gt;</a>
 
-                            <div class="container">
-                                <div class="modal-content">
+                    </div>  
+                    
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <!-- <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span> -->
+                    </div>
 
-                                    <div class="project-cover">
-                                        <img src="src/projects-covers/mata-mosquito.jpg" alt="">
-                                    </div>
+                </div>
 
-                                    <div class="about-project">
-                                        <h4>Game Mata Mosquito</h4>
-                                        <p>Jogo onde o jogador deve matar os mosquitos até
-                                            o estouro do cronômetro para vencer.
-                                        </p>
-                                    </div>
+                <div class="modals">
+                    
+                    <div id="modal-01" class="modal">
+                        <a href="#fechar" title="Fechar" class="fechar">X</a>
 
-                                    <div class="tech">
-                                        <h4>Tecnologias utilizadas:</h4>
-                                        <img alt=""
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-                                        <img alt=""
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                                    </div>
+                        <div class="container">
+                            <div class="modal-content">
 
-                                    <a class="project-btn" href="#">VER PROJETO</a>
-
+                                <div class="project-cover">
+                                    <img src="src/projects-covers/mata-mosquito.jpg" alt="">
                                 </div>
+
+                                <div class="about-project">
+                                    <h4>Game Mata Mosquito</h4>
+                                    <p>Jogo onde o jogador deve matar os mosquitos até
+                                        o estouro do cronômetro para vencer.
+                                    </p>
+                                </div>
+
+                                <div class="tech">
+                                    <h4>Tecnologias utilizadas:</h4>
+                                    <img alt=""
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+                                    <img alt=""
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+                                    <img
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                                </div>
+
+                                <a class="project-btn" href="#">VER PROJETO</a>
 
                             </div>
 
                         </div>
-                        
+
                     </div>
-
-                    <div class="project">
-
-                        <a class="thumb" href="#modal-01">
-                            <img src="src/projects-covers/mata-mosquito.jpg" alt="">
-    
-                        </a>
-
-                        <div id="modal-01" class="modal">
-                            <a href="#fechar" title="Fechar" class="fechar">X</a>
-
-                            <div class="container">
-                                <div class="modal-content">
-
-                                    <div class="project-cover">
-                                        <img src="src/projects-covers/mata-mosquito.jpg" alt="">
-                                    </div>
-
-                                    <div class="about-project">
-                                        <h4>Game Mata Mosquito</h4>
-                                        <p>Jogo onde o jogador deve matar os mosquitos até
-                                            o estouro do cronômetro para vencer.
-                                        </p>
-                                    </div>
-
-                                    <div class="tech">
-                                        <h4>Tecnologias utilizadas:</h4>
-                                        <img alt=""
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
-                                        <img alt=""
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
-                                        <img
-                                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-                                    </div>
-
-                                    <a class="project-btn" href="#">VER PROJETO</a>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                        
-                    </div>
-
                 </div>
 
             </div>
 
         </section> <!-- Fim Porfolio -->
 
-        <section id="contact" class="contact">
-            <!-- Inicio contato -->
+        <section id="contact" class="contact">  <!-- Inicio contato -->           
 
             <div class="content">
 
