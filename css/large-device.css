@@ -120,27 +120,6 @@
         background-color: rgb(114, 0, 185);        
     }  
 
-    /* Habilidades */
-
-    .skill-cards {
-        display: grid;
-        row-gap: 60px;
-        column-gap: 60px;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        justify-content: center;
-        justify-items: center;
-        padding: 20px;
-    }
-    
-    .skill-card {
-        margin: 0;
-        border-radius: 0 0 .6rem .6rem;
-        display: flex;
-        flex-direction: column;
-        width: 170px;
-        position: relative;
-    }
-
     /* *********************** Portfólio *********************** */
 
     .modal-content {
