@@ -912,13 +912,13 @@ h4 {
 
 .contact {
     color: black;
-    min-height: 75vh;
+    min-height: 100vh;
 }
 
 .contact-form {
     text-align: center;
     border: none;
-    margin: 130px auto;
+    margin: 80px auto;
     width: 100%;
 }
 
