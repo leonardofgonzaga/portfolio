@@ -26,6 +26,24 @@ h4 {
     height: 100%;
 }
 
+@media screen and (min-width: 426px) {
+
+    .content {
+        margin: 0 50px;
+        position: relative;
+    }
+
+}
+
+@media (min-width: 901px) {
+    
+    .content {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+}
+
 /* ************************ Header ************************ */
 
 .header {
@@ -41,6 +59,23 @@ h4 {
 .header a {
     color: white;
     text-decoration: none;
+}
+
+@media (min-width: 901px) {
+    
+    .header {
+        display: block;
+        padding: 1rem;
+        background: transparent;
+        height: 60px;
+        
+    }
+    
+    .header a {
+        color: white;
+        text-decoration: none;
+    }
+
 }
 
 /* Botão hamburguer */
@@ -86,6 +121,14 @@ h4 {
     transform: rotate(135deg);
 }
 
+@media (min-width: 901px) {
+    
+    #btn-mobile {
+        display: none;
+    }
+
+}
+
 /* Navbar */
 
 #nav-bar {
@@ -117,6 +160,43 @@ h4 {
     font-size: 1.3rem;
 }
 
+@media (min-width: 901px) {
+    
+    #nav-bar {
+        height: 60px;       
+    }
+    
+    #nav-bar ul li:first-child {
+        margin-top: 10px;
+    }
+    
+    #nav-bar ul {
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    #nav-bar ul li {
+        margin: 10px 5px;        
+        list-style: none;
+        border: none;        
+    }
+    
+    #nav-bar ul li a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        font-size: 1.2rem;
+        padding: 5px 10px;
+        transition: .3s;
+        font-weight: bold;
+    }
+
+    #nav-bar ul li a:hover {
+        color: var(--secondary-color);
+    }
+
+}
+
 /* Menu */
 
 #menu {
@@ -137,6 +217,28 @@ h4 {
     width: 75%;
     visibility: visible;
     overflow-x: auto;
+}
+
+@media screen and (min-width: 426px) {
+    
+    #menu.mostrar {
+        width: 60%;
+    }
+}
+
+@media (min-width: 901px) {
+    
+    #menu {
+        position: inherit;
+        width: auto;
+        height: auto;
+        background: transparent;
+        display: flex;
+        visibility: visible;
+        justify-content: center;
+        padding: 0;        
+    }
+
 }
 
 /* *********************** Introdução ************************/
@@ -251,6 +353,59 @@ h4 {
     font-size: 1.2rem;
 }
 
+@media screen and (min-width: 426px) {
+    
+    .introduction h3 {
+        font-size: 1.3rem;
+    }
+
+    .introduction p {
+        font-size: 4rem;
+    }
+
+    .introduction .job {
+        font-size:1.6rem;
+    }
+
+    .social-network a i {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    
+    .introduction h3 {
+        font-size: 1.3rem;
+        color: var(--secondary-color);
+        font-weight: bolder;
+    }
+
+    .social-network a i {
+        transition: .3s;
+    }
+
+    .fa-github:hover {
+        color: rgb(102, 102, 102);
+    }
+
+    .fa-linkedin:hover {
+        color: rgb(14, 118, 168);
+    }
+    
+    .fa-whatsapp:hover {
+        color: rgb(37, 211, 102);
+    }
+
+    .saiba-mais a {
+        transition: .3s;
+    }
+
+    .saiba-mais a:hover {
+        color: var(--secondary-color);
+    }
+
+}
+
 /* *********************** Resumo *********************** */
 
 /* Titulo */
@@ -295,6 +450,46 @@ h4 {
     font-size: 1.2rem;
 }
 
+@media screen and (min-width: 426px) {
+    
+    .about img {
+        display: flex;
+        height: 120px;
+        border-radius: 200px;
+        margin: 30px auto;
+    }
+
+    .personal-info div {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .personal-info div p {
+        font-size: 1.3rem;
+    }
+
+}
+
+@media screen and (min-width: 901px) {
+    
+    .about img {
+        display: flex;
+        height: 120px;
+        border-radius: 200px;
+        margin: 30px auto;
+    }
+
+    .personal-info div {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .personal-info div p {
+        font-size: 1.3rem;
+    }
+
+}
+
 /* Informações Acadêmicas */
 
 .graduation {
@@ -334,6 +529,19 @@ h4 {
     text-align: justify;
 }
 
+@media screen and (min-width: 426px) {
+    
+    .graduation {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .institute p {
+        font-size: rem;
+    }
+
+}
+
 /* Habilidades */
 
 .skill-card {
@@ -370,7 +578,7 @@ h4 {
         display: grid;
         column-gap: 35px;
         row-gap: 20px;
-        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(110p, 1fr));
         justify-content: center;
         justify-items: center;
         padding: 20px;
@@ -387,6 +595,37 @@ h4 {
 
     .skill-card img {
         height: 50px;
+    }
+
+}
+
+@media screen and (min-width: 426px) {
+    
+    .skill-cards {
+        display: grid;
+        row-gap: 60px;
+        column-gap: 60px;
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        justify-content: center;
+        justify-items: center;
+        padding: 20px;
+    }
+    
+    .skill-card {
+        margin: 0;
+        border-radius: 0 0 .6rem .6rem;
+        display: flex;
+        flex-direction: column;
+        width: 150px;
+        position: relative;
+    }
+
+}
+
+@media screen and (min-width: 901px) {
+    
+    .skill-card div:hover {
+        background-color: rgb(213, 168, 255);
     }
 
 }
@@ -409,6 +648,27 @@ h4 {
     height: 50px;
     width: 100%;
     cursor: pointer;
+}
+
+@media screen and (min-width: 426px) {
+    
+    .download-cv button {
+        width: 50%;
+        margin: 60px auto;
+    }
+    
+}
+
+@media screen and (min-width: 901px) {
+    
+    .download-cv button {
+        transition: .3s;
+    }
+
+    .download-cv button:hover {
+        background-color: rgb(114, 0, 185);        
+    }  
+    
 }
 
 /* *********************** Portfolio ***********************  */
@@ -608,17 +868,51 @@ h4 {
     border-radius: 0 0 10px 10px;
 }
 
+@media screen and (min-width: 426px) {
+    
+    .about-project h4,
+    .tech h4 {
+        font-size: 1.2rem;
+    }
+    .about-project p{
+        font-size: 1rem;
+    }
+
+    .tech img {
+        margin: 5px 0;
+        height: 35px;
+    }
+    
+}
+
+@media screen and (min-width: 901px) {
+    
+    .modal-content {
+        background-color: white;
+        width: 50%;
+    } 
+
+    .project-btn {
+        transition: .5s;
+    }
+
+    .project-btn:hover {
+        background-color: rgb(114, 0, 185);  
+    }
+    
+}
+
 /* *********************** Contato ***********************  */
 
 .contact {
     color: black;
-    min-height: 100vh;
+    min-height: 75vh;
 }
 
 .contact-form {
     text-align: center;
     border: none;
-    margin: 80px 0;
+    margin: 130px auto;
     width: 100%;
 }
 
@@ -675,6 +969,40 @@ h4 {
     cursor: pointer;
 }
 
+@media screen and (min-width: 426px) {
+    
+    .contact-form {
+        text-align: center;
+        border: none;
+        margin: 80px auto; 
+        width: 90%;    
+    }
+
+    .contact-form button {
+        height: 70px;
+    }
+    
+}
+
+@media screen and (min-width: 901px) {
+    
+    .contact-form {
+        text-align: center;
+        border: none;
+        margin: 80px auto; 
+        width: 80%;    
+    }
+
+    .contact-form button {
+        transition: .3s;
+    }
+
+    .contact-form button:hover {
+        background-color: rgb(0, 160, 0);
+    }
+    
+}
+
 /* *********************** Rodapé ***********************  */
 
 .footer {
@@ -704,4 +1032,48 @@ h4 {
 .bottom-line {
     text-align: center;
     padding: 10px 0;
+}
+
+@media screen and (min-width: 426px) {
+    
+    .contact-form {
+        text-align: center;
+        border: none;
+        margin: 80px auto; 
+        width: 90%;    
+    }
+
+    .contact-form button {
+        height: 70px;
+    }
+
+    .footer {
+        min-height: 320px;
+    }
+
+    .footer-cards {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        justify-content: center;
+        justify-items: center;
+    }
+    
+    .footer-card {
+        margin: 0;
+        border-radius: 0 0 .6rem .6rem;
+        display: flex;
+        flex-direction: column;
+        width: 170px;
+        position: relative;
+    }
+
+    .footer-card:nth-child(3) i {
+        margin-top: 0px;
+    }
+
+    .bottom-line {
+        margin-top: 100px;
+    }  
+    
 }
